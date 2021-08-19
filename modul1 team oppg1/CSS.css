@@ -1,0 +1,216 @@
+#grid 
+{
+ display: grid;
+ height: 100vh; 
+ padding: 0;
+ margin: 10px;
+ grid-gap: 10px;
+ background-color: rgb(191, 207, 159);
+ border: solid black;
+  grid-template-areas: 
+  "r1k1 r1k2 r1k3"
+  "r2k1 r2k2 r2k3"
+  "r3k1 r3k2 r3k3"; 
+  grid-template-columns: 10fr 10fr 10fr;
+  grid-template-rows: 10fr 10fr 10fr;
+}
+
+
+#r1k1{
+    grid-area: r1k1;
+    margin: 10px;
+    margin-bottom: 40px;
+    background-image: linear-gradient(to bottom right, rgb(32, 78, 204), rgb(255, 255, 0));
+    background-color: rgb(36, 93, 250);
+    opacity: 65%;
+    color: rgba(6, 224, 90, 0.692);
+    text-shadow: 2px 2px 4px red, 0 0 1em blue, 0 0 0.2em blue;
+    border: solid black;
+    font-family: Impact, Haettenschweiler, 'sans-serif', sans-serif;   
+    text-align: center;
+
+    
+}
+#r1k2{
+    grid-area: r1k2;
+    margin: 10px;
+    background-color: rgb(106, 145, 255);
+    opacity: 85%;
+    color: whitesmoke;
+    text-shadow: 5px 3px 4px rgb(129, 131, 0), 0 0 1em rgba(0, 0, 117, 0.685), 0 0 0.2em rgb(0, 0, 180);
+    border: solid black;
+    font-family: 'Arial Bold', sans-serif; 
+    text-align: center;
+}
+#r1k3{
+    grid-area: r1k3;
+    margin: 40px;
+    margin-left: 25px;
+    margin-top: 60px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_kPd-Mn5NZoiGt9lyPsjU6lmpc8iVFMJH20sQl7DIECooNv6A9eh89tFqNLmuWYCN4cc&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    opacity: 85%;
+    color: rgb(16, 17, 22);
+    text-shadow: #FC0 1px 0 10px;
+    border: solid black;
+    font-family: 'Arial Bold', sans-serif; 
+    text-align: center;
+
+}
+
+#r2k1{
+    grid-area: r2k1;
+    background-image: url('frosk_hoyopploselig.jpg');
+    background-size: cover;
+}
+#r2k2{
+    grid-area: r2k2;
+    margin: 60px;
+    margin-left: 10px;
+    margin-top: 30px;
+    background-color: rgb(17, 167, 147);
+    opacity: 85%;
+    color: whitesmoke;
+    text-shadow: 5px 3px 4px rgb(89, 194, 63), 0 0 1em rgba(255, 148, 7, 0.904), 0 0 0.2em rgb(0, 0, 180);
+    border: solid black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    text-align: center;
+}
+#r2k3{
+    grid-area: r2k3;
+    background-image: url("frosk.jpg.jpg");
+    height: 100%;
+    background-repeat: no repeat;
+    background-size: cover;
+}
+
+
+
+#r3k2{
+    grid-area: r3k2;
+    /* background-image: url("https://gifimage.net/wp-content/uploads/2018/11/rainbow-frog-meme-gif-4.gif"); */
+    height: 100%;
+    background-repeat: no repeat;
+    background-size: cover;
+}
+#r3k3{
+    grid-area: r3k3;
+    
+    background-image: url("https://images.squarespace-cdn.com/content/v1/593d98af197aeae4e211ebb5/1544162974278-2ZJA8S002XVTW0CSPBV9/frog+animation+2.gif?format=1000w");
+    background-repeat: no repeat;
+    background-size: cover;
+    height: 100%;
+    
+
+}
+
+    
+#button{
+    height: 80px;
+    width: 150px;
+    color: rgb(52, 184, 69);
+    background-color: rgb(71, 71, 71);
+    text-size-adjust: 100%;
+    margin-top: 15px;
+    /* text height: 40px;
+    text width: 100px; */
+}
+
+
+
+    .wrapper {
+        display: flex;
+        height: 10vh;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .button {
+        border: 1px transparent;
+        -webkit-border-radius: 40px;
+        border-radius: 40px;
+        color: #eeeeee;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Arial;
+        font-size: 20px;
+        padding: 8px 30px;
+        text-align: center;
+        text-decoration: none;
+        margin-left: 20px;
+        -webkit-animation: glowing 1300ms infinite;
+        -moz-animation: glowing 1300ms infinite;
+        -o-animation: glowing 1300ms infinite;
+        animation: glowing 1300ms infinite;
+      }
+      @-webkit-keyframes glowing {
+        0% {
+          background-color: #0091b2;
+          -webkit-box-shadow: 0 0 3px #0091b2;
+        }
+        50% {
+          background-color: #21c7ed;
+          -webkit-box-shadow: 0 0 15px #21c7ed;
+        }
+        100% {
+          background-color: #0091b2;
+          -webkit-box-shadow: 0 0 3px #0091b2;
+        }
+      }
+      @keyframes glowing {
+        0% {
+          background-color: #0091b2;
+          box-shadow: 0 0 3px #0091b2;
+        }
+        50% {
+          background-color: #21c7ed;
+          box-shadow: 0 0 15px #21c7ed;
+        }
+        100% {
+          background-color: #0091b2;
+          box-shadow: 0 0 3px #0091b2;
+        }
+      }
+      .svg-btn {
+        display: block;
+        width: 56px;
+        height: 0px;
+        margin-left: -170px;
+      }
+      svg {
+        fill: blue;
+        -webkit-animation: glowing-polygon 1300ms infinite;
+        -moz-animation: glowing-polygon 1300ms infinite;
+        -o-animation: glowing-polygon 1300ms infinite;
+        animation: glowing-polygon 1300ms infinite;
+        margin: 0vh 0 0 -3vw;
+      }
+      @-webkit-keyframes glowing-polygon {
+        0% {
+          fill: #0091b2;
+          -webkit-filter: drop-shadow( 0 0 3px #0091b2);
+        }
+        50% {
+          fill: #21c7ed;
+          -webkit-filter: drop-shadow( 0 0 15px #21c7ed);
+        }
+        100% {
+          fill: #0091b2;
+          -webkit-filter: drop-shadow( 0 0 3px #0091b2);
+        }
+      }
+      @keyframes glowingPolygon {
+        0% {
+          fill: #0091b2;
+          filter: drop-shadow( 0 0 3px #0091b2);
+        }
+        50% {
+          fill: #21c7ed;
+          filter: drop-shadow( 0 0 15px #21c7ed);
+        }
+        100% {
+          fill: #0091b2;
+          filter: drop-shadow( 0 0 3px #0091b2);
+        }
+    }
